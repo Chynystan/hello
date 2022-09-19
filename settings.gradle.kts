@@ -13,4 +13,8 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "kepkiApp"
-include ':app'
+include (":app")
+include(":data")
+include(":domain")
+include(":core_ui")
+include(":core")
