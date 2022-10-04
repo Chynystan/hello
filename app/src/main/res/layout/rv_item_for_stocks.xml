@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    
+    <ImageView
+        android:id="@+id/img_model"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bg_bestsellers"
+        android:padding="20dp"
+        android:src="@drawable/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+    
+    <TextView
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/s_f_u_i_text_bold"
+        android:textColor="@color/black"
+        android:id="@+id/txt_name_model"
+        app:layout_constraintStart_toStartOf="@id/img_model"
+        app:layout_constraintTop_toBottomOf="@id/img_model"
+        android:textSize="12sp"
+        android:text="Adidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    
+    <TextView
+        android:id="@+id/txt_desk_model"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@id/txt_name_model"
+        app:layout_constraintTop_toBottomOf="@id/txt_name_model"
+        android:textSize="10sp"
+        android:text="San Francisco Baseball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="SmallSp"/>
+    
+    
+    <TextView
+        android:layout_marginStart="4dp"
+        app:layout_constraintTop_toTopOf="@id/txt_price_before_stock"
+        app:layout_constraintBottom_toBottomOf="@id/txt_price_before_stock"
+        app:layout_constraintStart_toEndOf="@id/txt_price_before_stock"
+        android:id="@+id/txt_price_model"
+        android:fontFamily="@font/s_f_u_i_text_bold"
+        android:textSize="14sp"
+        android:textColor="@color/orange"
+        android:text="3800 сом"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:src="@drawable/ic_like"
+        app:layout_constraintTop_toTopOf="@id/txt_name_model"
+        app:layout_constraintEnd_toEndOf="@id/img_model"
+        android:layout_width="18dp"
+        android:layout_height="18dp"/>
+
+    <TextView
+        android:id="@+id/txt_price_before_stock"
+        android:fontFamily="@font/s_f_u_i_text_bold"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/txt_desk_model"
+        app:layout_constraintTop_toBottomOf="@id/txt_desk_model"
+        android:text="4600 сом"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,9 @@
       <module name="kepkiApp.buildSrc.test" target="11" />
       <module name="kepkiApp.core_ui" target="11" />
       <module name="kepkiApp.data" target="11" />
+      <module name="kepkiApp2.buildSrc" target="11" />
+      <module name="kepkiApp2.buildSrc.main" target="11" />
+      <module name="kepkiApp2.buildSrc.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
